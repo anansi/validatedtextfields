@@ -54,15 +54,17 @@ class ValidatedTextField: UITextField, UITextFieldDelegate {
         
     }
     
+    //This implementation of the valid() function is here to cause the build to fail, as this is a function that must be implemented by the subclass of ValidatedField. This is how Abstract classes are implemented in Swift.
+    //http://bartjacobs.com/how-to-create-an-abstract-class-in-swift/
     func valid() -> Bool    {
         preconditionFailure("This method must be overridden") 
     }
     
     
-    
+    //The class will be taught about Delegates in this lecture. This will definitely be their introduction!
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
-        //store existing postion values
+        //store existing position values
         let beginning = textField.beginningOfDocument
         let start = textField.positionFromPosition(beginning, offset:range.location)
 
