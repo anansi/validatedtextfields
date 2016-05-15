@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FullNameTextField: ValidatedTextField {
+class FullNameValidationField: ValidatedTextField {
 
     
     override func valid() -> Bool    {

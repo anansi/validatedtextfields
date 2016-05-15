@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42F22D761CE8E3D600176E77 /* FullNameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F22D751CE8E3D600176E77 /* FullNameTextField.swift */; };
+		42F22D761CE8E3D600176E77 /* FullNameValidationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F22D751CE8E3D600176E77 /* FullNameValidationField.swift */; };
 		42F49D7A1CE49E3F00FE4EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F49D791CE49E3F00FE4EF1 /* AppDelegate.swift */; };
 		42F49D7C1CE49E3F00FE4EF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F49D7B1CE49E3F00FE4EF1 /* ViewController.swift */; };
 		42F49D7F1CE49E3F00FE4EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F49D7D1CE49E3F00FE4EF1 /* Main.storyboard */; };
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42F22D751CE8E3D600176E77 /* FullNameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FullNameTextField.swift; path = ValidatedTextField/FullNameTextField.swift; sourceTree = "<group>"; };
+		42F22D751CE8E3D600176E77 /* FullNameValidationField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FullNameValidationField.swift; path = ValidatedTextField/FullNameValidationField.swift; sourceTree = "<group>"; };
 		42F49D761CE49E3F00FE4EF1 /* ValidatedUITextFieldAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidatedUITextFieldAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F49D791CE49E3F00FE4EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F49D7B1CE49E3F00FE4EF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			children = (
 				42F49DAA1CE4A03100FE4EF1 /* EmailValidationField.swift */,
 				42F49DA81CE49F1E00FE4EF1 /* ValidatedField.swift */,
-				42F22D751CE8E3D600176E77 /* FullNameTextField.swift */,
+				42F22D751CE8E3D600176E77 /* FullNameValidationField.swift */,
 			);
 			name = ValidatedTextField;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 				42F49D7C1CE49E3F00FE4EF1 /* ViewController.swift in Sources */,
 				42F49DA91CE49F1E00FE4EF1 /* ValidatedField.swift in Sources */,
 				42F49D7A1CE49E3F00FE4EF1 /* AppDelegate.swift in Sources */,
-				42F22D761CE8E3D600176E77 /* FullNameTextField.swift in Sources */,
+				42F22D761CE8E3D600176E77 /* FullNameValidationField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
