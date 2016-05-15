@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,34 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ael-zR-dtp" customClass="EmailValidationField" customModule="ValidatedUITextFieldAssessment" customModuleProvider="target">
-                                <rect key="frame" x="40" y="137" width="515" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8K-Vs-Kyc">
                                 <rect key="frame" x="487" y="14" width="93" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="93" id="FB1-s5-FeB"/>
                                     <constraint firstAttribute="height" constant="81" id="wgN-aS-Zmx"/>
                                 </constraints>
-                                <state key="normal" title="Done"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHn-Xt-RuV"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1Y-mf-7fV" customClass="FullNameTextField" customModule="ValidatedUITextFieldAssessment" customModuleProvider="target">
+                                <rect key="frame" x="40" y="136" width="515" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ael-zR-dtp" customClass="EmailValidationField" customModule="ValidatedUITextFieldAssessment" customModuleProvider="target">
+                                <rect key="frame" x="40" y="179" width="515" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-it-wbf">
+                                <rect key="frame" x="234" y="35" width="133" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="SbO-Tk-N13"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgZ-LC-uu9">
+                                <rect key="frame" x="185" y="81" width="230" height="26"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ael-zR-dtp" secondAttribute="trailing" constant="25" id="2CQ-gB-S3z"/>
+                            <constraint firstItem="S1Y-mf-7fV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="4ux-cf-fL4"/>
+                            <constraint firstItem="S1Y-mf-7fV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="116" id="AZd-Gg-KZN"/>
                             <constraint firstItem="ael-zR-dtp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="E8i-9m-U9J"/>
+                            <constraint firstItem="sVP-it-wbf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="LMo-bX-9hc"/>
+                            <constraint firstItem="lgZ-LC-uu9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SzU-T9-nQr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j8K-Vs-Kyc" secondAttribute="trailing" id="XtW-o6-CLZ"/>
-                            <constraint firstItem="ael-zR-dtp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="117" id="lIV-Li-YZu"/>
+                            <constraint firstItem="ael-zR-dtp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="159" id="lIV-Li-YZu"/>
+                            <constraint firstItem="sVP-it-wbf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oTS-pC-0h8"/>
                             <constraint firstItem="j8K-Vs-Kyc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="q3h-SS-ZGR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S1Y-mf-7fV" secondAttribute="trailing" constant="25" id="sK9-VM-CH7"/>
+                            <constraint firstItem="lgZ-LC-uu9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="xMw-j1-uTj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="ael-zR-dtp" id="iC2-8n-40q"/>
+                        <outlet property="emailTextField" destination="ael-zR-dtp" id="d6Q-NU-JyD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
+
     
+    @IBOutlet weak var emailTextField: EmailValidationField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
 
     @IBAction func doneButtonTapped(sender: UIButton) {
         
+        self.emailTextField.updateUI(true)
+        self.emailTextField.updateUI(true)
         self.view.resignFirstResponder()
         self.view.endEditing(true)
     }
